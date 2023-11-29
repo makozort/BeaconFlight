@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "priority": 1000,
+  "package": "net.makozort.beaconflight.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "beaconflight.refmap.json",
+  "mixins": [
+    "BeaconMixin"
+  ],
+  "minVersion": "0.8.5"
+}

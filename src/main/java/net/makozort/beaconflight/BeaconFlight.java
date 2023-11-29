@@ -1,29 +1,35 @@
-package me.sizableshrimp.examplemod;
+package net.makozort.beaconflight;
 
 import com.mojang.logging.LogUtils;
+import com.tterrag.registrate.Registrate;
+import net.makozort.beaconflight.effect.ModEffects;
+import net.makozort.beaconflight.reg.AllItems;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(ExampleMod.MODID)
+@Mod(BeaconFlight.MOD_ID)
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ExampleMod {
-    public static final String MODID = "examplemod";
+public class BeaconFlight {
+    public static final String MOD_ID = "beaconflight";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public ExampleMod() {}
+
+    public BeaconFlight() {
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModEffects.register(modEventBus);
+        AllItems.register();
+    }
 
     @SubscribeEvent
     public static void onCommonSetup(FMLCommonSetupEvent event) {
-        // Do something when the setup is run on both client and server
-        LOGGER.info("HELLO from common setup!");
     }
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        // Do something when the setup is run on only the client
-        LOGGER.info("HELLO from client setup!");
     }
 }
