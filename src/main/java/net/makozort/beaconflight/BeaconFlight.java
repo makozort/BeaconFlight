@@ -1,9 +1,13 @@
 package net.makozort.beaconflight;
 
 import com.mojang.logging.LogUtils;
-import com.tterrag.registrate.Registrate;
+import net.makozort.beaconflight.content.entity.ModEntities;
+import net.makozort.beaconflight.content.entity.client.TestRenderer;
 import net.makozort.beaconflight.effect.ModEffects;
 import net.makozort.beaconflight.reg.AllItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -23,13 +27,25 @@ public class BeaconFlight {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModEffects.register(modEventBus);
         AllItems.register();
+        ModEntities.register(modEventBus);
     }
 
     @SubscribeEvent
     public static void onCommonSetup(FMLCommonSetupEvent event) {
     }
 
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
-    public static void onClientSetup(FMLClientSetupEvent event) {
+    public void onServerStarting(ServerStartingEvent event) {
+
+    }
+
+    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.TEST.get(), TestRenderer::new);
+        }
     }
 }

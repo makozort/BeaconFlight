@@ -33,12 +33,13 @@ public class ModEvents {
                 event.getTable().addPool(builder.build());
             }
         }
+
         @SubscribeEvent
         public static void onLiving(LivingEvent.LivingTickEvent event) {
             Entity entity = event.getEntity();
-            if (entity.getLevel() instanceof ServerLevel) {
+            if (entity.level() instanceof ServerLevel) {
                 if (entity instanceof Player player) {
-                    if (!(player.isCreative() || player.isSpectator()))  {
+                    if (!(player.isCreative() || player.isSpectator())) {
                         if (player.getAbilities().mayfly && (!player.hasEffect(ModEffects.FLIGHT.get()))) {
                             player.getAbilities().flying = false;
                             player.getAbilities().mayfly = false;
