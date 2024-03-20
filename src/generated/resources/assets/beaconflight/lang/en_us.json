@@ -1,5 +1,12 @@
 {
   "item.beaconflight.flight_ring": "Flight Ring",
-  "effect.beaconflight.flight": "Flight",
-  "tooltip.beaconflight.flightring.tooltip": "grants flight whilst held near a max tier beacon"
+
+
+  "enchantment.beaconflight.dash": "Dash",
+
+  "enchantment.beaconflight.see_through": "See Through",
+
+  "tooltip.beaconflight.flightring.tooltip": "Grants user flight when in range of max beacon and has ring in active slot",
+
+  "effect.beaconflight.flight": "Flight"
 }

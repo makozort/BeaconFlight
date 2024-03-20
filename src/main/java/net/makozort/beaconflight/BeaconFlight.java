@@ -3,7 +3,11 @@ package net.makozort.beaconflight;
 import com.mojang.logging.LogUtils;
 
 import net.makozort.beaconflight.effect.ModEffects;
+import net.makozort.beaconflight.loot.ModLootModifiers;
+import net.makozort.beaconflight.networking.ModPackets;
 import net.makozort.beaconflight.reg.AllItems;
+import net.makozort.beaconflight.reg.AllSoundEvents;
+import net.makozort.beaconflight.reg.AllEnchantments;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,10 +27,18 @@ public class BeaconFlight {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModEffects.register(modEventBus);
         AllItems.register();
+        AllSoundEvents.register(modEventBus);
+        AllEnchantments.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
     }
+    private void commonSetup(final FMLCommonSetupEvent event) {
 
+    }
     @SubscribeEvent
     public static void onCommonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModPackets.register();
+        });
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

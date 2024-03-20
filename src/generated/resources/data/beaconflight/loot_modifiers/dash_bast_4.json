@@ -1,0 +1,25 @@
+{
+  "type": "beaconflight:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+    },
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": {
+    "Count": 1,
+    "id": "minecraft:enchanted_book",
+    "tag": {
+      "StoredEnchantments": [
+        {
+          "id": "beaconflight:dash",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}
