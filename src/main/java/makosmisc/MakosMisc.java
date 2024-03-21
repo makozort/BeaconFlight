@@ -21,10 +21,6 @@ public class MakosMisc {
     public static final String MOD_ID = "makosmisc";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-
-
-
-
     public MakosMisc() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModEffects.register(modEventBus);
