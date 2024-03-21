@@ -1,0 +1,12 @@
+{
+  "item.makosmisc.flight_ring": "Flight Ring",
+
+
+  "enchantment.makosmisc.dash": "Dash",
+
+  "enchantment.makosmisc.hidden": "Hidden",
+
+  "tooltip.makosmisc.flightring.tooltip": "Grants user flight when in range of max beacon and has ring in active slot",
+
+  "effect.makosmisc.flight": "Flight"
+}

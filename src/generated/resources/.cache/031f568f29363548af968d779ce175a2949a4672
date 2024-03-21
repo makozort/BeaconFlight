@@ -1,0 +1,11 @@
+// 1.20.1	2024-03-21T19:48:38.3646601	Global Loot Modifiers : makosmisc
+07ca7f8222e7c553d25b319af9d344814dd54002 data/forge/loot_modifiers/global_loot_modifiers.json
+95e7427a6ee0fb040ff001b1ed64d0e97341ff9c data/makosmisc/loot_modifiers/dash_bast_1.json
+e17ba458bb6b280f3bc2e1fa8a627e627426ded3 data/makosmisc/loot_modifiers/dash_bast_2.json
+2b43646742cf4f4722f172d43d8ffc55348c62ef data/makosmisc/loot_modifiers/dash_bast_3.json
+26c8aefe8c6382725f0c833025ac4ad29d31393d data/makosmisc/loot_modifiers/dash_bast_4.json
+75f71a10a4ca03337fe418fec623475dc6ea5de1 data/makosmisc/loot_modifiers/flight_ring_from_end.json
+df3b1855b381ff249968db1e8d0d7769d52bcc8a data/makosmisc/loot_modifiers/hidden_bast_1.json
+ca7aed77a717b12f8c2f2a6c585cbfc503f2f3df data/makosmisc/loot_modifiers/hidden_bast_2.json
+b6a605c56d0873fe6f60460d1e88882265afb4af data/makosmisc/loot_modifiers/hidden_bast_3.json
+faa48ba0c2b6641a3d5a3a1c0c13b364c213fe7d data/makosmisc/loot_modifiers/hidden_bast_4.json

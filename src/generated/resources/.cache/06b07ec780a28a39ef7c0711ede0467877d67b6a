@@ -1,0 +1,4 @@
+// 1.20.1	2024-03-21T19:48:38.36266	Registrate Provider for makosmisc [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+ebfeba0bb152b5d4488fe52d5e0515ef23c503b7 assets/makosmisc/lang/en_ud.json
+33587a89e17a64ea4fb3ed35c3ebfb709d3d280f assets/makosmisc/lang/en_us.json
+3a084a442aea0fc460f8acca7dc2ab704161b271 assets/makosmisc/models/item/flight_ring.json

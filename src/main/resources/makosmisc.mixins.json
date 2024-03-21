@@ -1,7 +1,11 @@
 {
   "required": true,
   "priority": 1000,
+<<<<<<< Updated upstream:src/main/resources/beaconflight.mixins.json
   "package": "net.makozort.beaconflight.mixin",
+=======
+  "package": "makosmisc.mixin",
+>>>>>>> Stashed changes:src/main/resources/makosmisc.mixins.json
   "compatibilityLevel": "JAVA_17",
   "refmap": "beaconflight.refmap.json",
   "mixins": [
