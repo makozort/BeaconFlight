@@ -8,7 +8,14 @@
     "makosmisc:dash_bast_4",
     "makosmisc:hidden_bast_4",
     "makosmisc:hidden_bast_2",
-    "makosmisc:hidden_bast_3"
+    "makosmisc:hidden_bast_3",
+
+    "beaconflight:flight_ring_from_end",
+    "beaconflight:dash_bast_1",
+    "beaconflight:dash_bast_3",
+    "beaconflight:dash_bast_2",
+    "beaconflight:dash_bast_4"
+
   ],
   "replace": false
 }
