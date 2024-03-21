@@ -1,12 +1,5 @@
-<<<<<<<< Updated upstream:src/main/java/net/makozort/beaconflight/effect/FlightEffect.java
-package net.makozort.beaconflight.effect;
-
-import net.makozort.beaconflight.reg.AllItems;
-========
 package makosmisc.content.effect;
-
 import makosmisc.reg.AllItems;
->>>>>>>> Stashed changes:src/main/java/makosmisc/content/effect/FlightEffect.java
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;

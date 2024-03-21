@@ -1,14 +1,9 @@
-<<<<<<<< Updated upstream:src/main/java/net/makozort/beaconflight/mixin/BeaconMixin.java
-package net.makozort.beaconflight.mixin;
 
-import net.makozort.beaconflight.effect.ModEffects;
-import net.makozort.beaconflight.reg.AllItems;
-========
 package makosmisc.mixin.common;
+
 
 import makosmisc.content.effect.ModEffects;
 import makosmisc.reg.AllItems;
->>>>>>>> Stashed changes:src/main/java/makosmisc/mixin/common/BeaconMixin.java
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;

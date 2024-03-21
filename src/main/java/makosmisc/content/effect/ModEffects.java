@@ -1,14 +1,7 @@
-<<<<<<<< Updated upstream:src/main/java/net/makozort/beaconflight/effect/ModEffects.java
-package net.makozort.beaconflight.effect;
-
-
-import net.makozort.beaconflight.BeaconFlight;
-========
 package makosmisc.content.effect;
 
 
 import makosmisc.MakosMisc;
->>>>>>>> Stashed changes:src/main/java/makosmisc/content/effect/ModEffects.java
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraftforge.eventbus.api.IEventBus;

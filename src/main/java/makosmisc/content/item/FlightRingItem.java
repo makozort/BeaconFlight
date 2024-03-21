@@ -1,8 +1,6 @@
-<<<<<<<< Updated upstream:src/main/java/net/makozort/beaconflight/content/items/FlightRingItem.java
-package net.makozort.beaconflight.content.items;
-========
+
 package makosmisc.content.item;
->>>>>>>> Stashed changes:src/main/java/makosmisc/content/item/FlightRingItem.java
+
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
