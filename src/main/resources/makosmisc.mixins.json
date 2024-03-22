@@ -1,12 +1,13 @@
 {
   "required": true,
   "priority": 1000,
+  "refmap": "makosmisc.refmap.json",
   "package": "makosmisc.mixin",
   "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8.5",
   "mixins": [
     "common.BeaconMixin"
   ],
-  "minVersion": "0.8.5",
   "client": [
     "client.ArmorMixin"
   ]

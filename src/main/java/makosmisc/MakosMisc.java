@@ -4,9 +4,11 @@ package makosmisc;
 import com.mojang.logging.LogUtils;
 
 import makosmisc.content.effect.ModEffects;
+import makosmisc.loot.ModLootModifiers;
 import makosmisc.networking.ModPackets;
 import makosmisc.reg.AllEnchantments;
 import makosmisc.reg.AllItems;
+import makosmisc.reg.AllSoundEvents;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +28,8 @@ public class MakosMisc {
         ModEffects.register(modEventBus);
         AllItems.register();
         AllEnchantments.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+        AllSoundEvents.register(modEventBus);
     }
 
     @SubscribeEvent

@@ -10,18 +10,11 @@ public class DashEnchantment extends Enchantment {
         super(pRarity, pCategory, pApplicableSlots);
     }
 
-
-    public int getMinCost(int pLevel) {
-        return 1 + pLevel * 10;
+    public int getMinCost(int pEnchantmentLevel) {
+        return 15;
     }
 
-    public int getMaxCost(int pLevel) {
-        return this.getMinCost(pLevel) + 5;
-    }
-
-
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack) {
-        return false;
+    public int getMaxCost(int pEnchantmentLevel) {
+        return super.getMinCost(pEnchantmentLevel) + 50;
     }
 }

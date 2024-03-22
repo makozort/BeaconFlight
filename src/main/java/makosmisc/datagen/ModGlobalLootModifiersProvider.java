@@ -29,29 +29,29 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
         add("dash_bast_1", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
         add("dash_bast_2", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_other")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
         add("dash_bast_3", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_bridge")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
         add("dash_bast_4", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_hoglin_stable")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.DASH.get(),1))));
 
         add("hidden_bast_1", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
         add("hidden_bast_2", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_other")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
         add("hidden_bast_3", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_bridge")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
         add("hidden_bast_4", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_hoglin_stable")).build(),
-                LootItemRandomChanceCondition.randomChance(.3f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
+                LootItemRandomChanceCondition.randomChance(.45f).build()}, EnchantedBookItem.createForEnchantment(new EnchantmentInstance(AllEnchantments.HIDDEN.get(),1))));
 
     }
 }

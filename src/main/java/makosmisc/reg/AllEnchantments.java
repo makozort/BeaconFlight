@@ -2,6 +2,7 @@ package makosmisc.reg;
 
 import makosmisc.MakosMisc;
 import makosmisc.content.enchantment.DashEnchantment;
+import makosmisc.content.enchantment.HiddenEnchantment;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
@@ -22,7 +23,7 @@ public class AllEnchantments {
                             EnchantmentCategory.ARMOR, EquipmentSlot.FEET));
     public static RegistryObject<Enchantment> HIDDEN =
             ENCHANTMENTS.register("hidden",
-                    () -> new DashEnchantment(Enchantment.Rarity.COMMON,
+                    () -> new HiddenEnchantment(Enchantment.Rarity.COMMON,
                             EnchantmentCategory.ARMOR,EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS, EquipmentSlot.FEET));
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);

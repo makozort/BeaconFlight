@@ -28,21 +28,14 @@ public class ModEvents {
             Entity entity = event.getEntity();
             if (entity.level() instanceof ServerLevel serverLevel) {
                 if (entity instanceof Player player) {
-                    if (!(player.isCreative() || player.isSpectator())) {
-                        if (player.getAbilities().mayfly && (!player.hasEffect(ModEffects.FLIGHT.get()))) {
-                            player.getAbilities().flying = false;
-                            player.getAbilities().mayfly = false;
-                            player.onUpdateAbilities();
-                        }
-                        player.getCapability(CanDashProvider.DASH_CAP).ifPresent(dash -> {
-                            if (!dash.canDash()) {
-                                serverLevel.sendParticles(ParticleTypes.END_ROD, player.getOnPos().getCenter().x, player.getOnPos().getCenter().y, player.getOnPos().getCenter().z, 1, 0, 0, 0, 0);
-                                if (player.isInFluidType()) {
-                                    dash.setDash(true);
-                                }
+                    player.getCapability(CanDashProvider.DASH_CAP).ifPresent(dash -> {
+                        if (!dash.canDash()) {
+                            serverLevel.sendParticles(ParticleTypes.END_ROD, player.getOnPos().getCenter().x, player.getOnPos().getCenter().y, player.getOnPos().getCenter().z, 1, 0, 0, 0, 0);
+                            if (player.isInFluidType() || player.onGround()) {
+                                dash.setDash(true);
                             }
-                        });
-                    }
+                        }
+                    });
                 }
             }
         }
@@ -66,7 +59,6 @@ public class ModEvents {
                         if (dash.canWaveDash()) {
                             dash.stopWaveDash();
                             CelesteDash.waveDash(player);
-                            player.level().playSound(null, player.getOnPos(), SoundEvents.NOTE_BLOCK_CHIME.get(), SoundSource.MASTER, 1, 1F);
                         }
                     });
                 }
